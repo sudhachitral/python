@@ -4,10 +4,15 @@ a=[11,22,33]
 
 
 try:
-    print(a[0])
-    print(a[1])
-    print(a[2])
-    print(a[3])
+ #a=10/2
+  #print(a[5])
+  print(a)
+except ZeroDivisionError:
+    print("exception raised due to zero division error")
+except IndexError:
+    print("exception raised due to index out of range")   
+except NameError:
+    print("exception raised due to undefined variable") 
 except:
         print("some exception raised")
 else:
@@ -15,3 +20,4 @@ else:
 finally:
     print("this is a final block")
 print("outside try block")
+ 
